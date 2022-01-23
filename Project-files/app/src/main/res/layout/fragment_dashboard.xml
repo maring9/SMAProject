@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never">
+ <RelativeLayout
+     android:id="@+id/BreakfastLayout"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:layout_marginLeft="10dp"
+     android:layout_marginRight="10dp"
+     >
+
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Breakfast"
+             android:textColor="@color/colorPrimary"
+
+             android:layout_marginTop="10dp"
+             android:layout_marginBottom="5dp"
+             android:id="@+id/TxtviewBreakfastMeals"
+             ></TextView>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="kCal"
+         android:textColor="@color/colorPrimary"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="5dp"
+         android:layout_toEndOf="@+id/TxtviewBreakfastKcal"
+         android:id="@+id/TxtviewBreakfastKcalLabel"
+         ></TextView>
+
+     <TextView
+         android:layout_width="40dp"
+         android:layout_height="wrap_content"
+         android:text="0"
+         android:layout_marginLeft="300dp"
+         android:layout_marginTop="10dp"
+         android:textColor="@color/colorPrimary"
+         android:layout_marginBottom="5dp"
+         android:id="@+id/TxtviewBreakfastKcal"
+         ></TextView>
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:layout_width="match_parent"
+             android:layout_height="150dp"
+             android:id="@+id/recyclerViewBreakfastMeals"
+             android:layout_marginBottom="5dp"
+             android:background="@color/colorAccent"
+             android:layout_below="@+id/TxtviewBreakfastMeals"
+             ></androidx.recyclerview.widget.RecyclerView>
+
+         <Button
+
+             android:layout_height="40dp"
+             android:text="Add food"
+             android:id="@+id/BtnAddFoodBreakfastMeal"
+             android:textColor="@color/colorPrimary"
+             android:background="#C9E6EDEE"
+             android:layout_width="120dp"
+             android:layout_below="@+id/recyclerViewBreakfastMeals"
+             android:layout_alignParentEnd="true"
+             ></Button>
+
+
+
+
+
+
+
+
+
+
+     <TextView
+         android:layout_below="@+id/BtnAddFoodBreakfastMeal"
+         android:layout_marginTop="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Lunch"
+         android:textColor="@color/colorPrimary"
+         android:layout_marginBottom="5dp"
+         android:id="@+id/TxtviewLunchMeals"
+         ></TextView>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="kCal"
+         android:textColor="@color/colorPrimary"
+         android:layout_marginBottom="5dp"
+         android:layout_marginLeft="5dp"
+         android:layout_toEndOf="@+id/TxtviewBreakfastKcal"
+
+         android:layout_above="@+id/recyclerViewLunchMeals"
+         android:id="@+id/TxtviewLunchKcalLabel"
+         ></TextView>
+
+     <TextView
+         android:layout_width="40dp"
+         android:layout_height="wrap_content"
+         android:text="0"
+         android:layout_marginLeft="300dp"
+         android:textColor="@color/colorPrimary"
+         android:layout_marginBottom="5dp"
+         android:layout_above="@+id/recyclerViewLunchMeals"
+         android:id="@+id/TxtviewLunchKcal"
+         ></TextView>
+
+     <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="match_parent"
+         android:layout_height="150dp"
+         android:id="@+id/recyclerViewLunchMeals"
+         android:layout_marginBottom="5dp"
+         android:background="@color/colorAccent"
+         android:layout_below="@+id/TxtviewLunchMeals"
+         ></androidx.recyclerview.widget.RecyclerView>
+
+     <Button
+
+         android:layout_height="40dp"
+         android:text="Add food"
+         android:id="@+id/BtnAddFoodLunchMeal"
+         android:textColor="@color/colorPrimary"
+         android:background="#C9E6EDEE"
+         android:layout_width="120dp"
+         android:layout_below="@+id/recyclerViewLunchMeals"
+         android:layout_alignParentEnd="true"
+         ></Button>
+
+
+
+
+
+
+
+
+
+
+     <TextView
+         android:layout_below="@+id/BtnAddFoodLunchMeal"
+         android:layout_marginTop="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Dinner"
+         android:textColor="@color/colorPrimary"
+         android:layout_marginBottom="5dp"
+         android:id="@+id/TxtviewDinnerMeals"
+         ></TextView>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="kCal"
+         android:textColor="@color/colorPrimary"
+         android:layout_marginBottom="5dp"
+         android:layout_marginLeft="5dp"
+         android:layout_toEndOf="@+id/TxtviewDinnerKcal"
+
+         android:layout_above="@+id/recyclerViewDinnerMeals"
+         android:id="@+id/TxtviewDinnerKcalLabel"
+         ></TextView>
+
+     <TextView
+         android:layout_width="40dp"
+         android:layout_height="wrap_content"
+         android:text="0"
+         android:layout_marginLeft="300dp"
+         android:textColor="@color/colorPrimary"
+         android:layout_marginBottom="5dp"
+         android:layout_above="@+id/recyclerViewDinnerMeals"
+         android:id="@+id/TxtviewDinnerKcal"
+         ></TextView>
+
+     <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="match_parent"
+         android:layout_height="150dp"
+         android:id="@+id/recyclerViewDinnerMeals"
+         android:layout_marginBottom="5dp"
+         android:background="@color/colorAccent"
+         android:layout_below="@+id/TxtviewDinnerMeals"
+         ></androidx.recyclerview.widget.RecyclerView>
+
+     <Button
+
+         android:layout_height="40dp"
+         android:text="Add food"
+         android:id="@+id/BtnAddFoodDinnerMeal"
+         android:textColor="@color/colorPrimary"
+         android:background="#C9E6EDEE"
+         android:layout_width="120dp"
+         android:layout_below="@+id/recyclerViewDinnerMeals"
+         android:layout_alignParentEnd="true"
+         ></Button>
+
+
+
+
+ </RelativeLayout>
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>
+</RelativeLayout>

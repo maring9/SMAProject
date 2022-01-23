@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".AddFood">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        >
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Name"
+        android:background="#ffff"
+        android:layout_height="55dp"
+
+
+
+        android:id="@+id/edAddFoodName"
+        android:layout_width="match_parent"
+        ></EditText>
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="grams"
+        android:background="#ffff"
+        android:layout_height="55dp"
+        android:inputType="number"
+        android:layout_below="@+id/edAddFoodName"
+        android:id="@+id/edAddFoodGrams"
+        android:layout_width="match_parent"
+        ></EditText>
+
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="kCal"
+        android:background="#ffff"
+        android:layout_height="55dp"
+        android:inputType="number"
+        android:id="@+id/edAddFoodKcal"
+
+        android:layout_below="@+id/edAddFoodGrams"
+        android:layout_width="match_parent"
+        ></EditText>
+
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="protein"
+        android:background="#ffff"
+        android:layout_height="55dp"
+        android:inputType="number"
+        android:id="@+id/edAddFoodProt"
+
+        android:layout_below="@+id/edAddFoodKcal"
+        android:layout_width="match_parent"
+        ></EditText>
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="carbs"
+        android:background="#ffff"
+        android:layout_height="55dp"
+        android:inputType="number"
+        android:id="@+id/edAddFoodCarbs"
+
+        android:layout_below="@+id/edAddFoodProt"
+        android:layout_width="match_parent"
+        ></EditText>
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="fats"
+        android:background="#ffff"
+        android:layout_height="55dp"
+        android:inputType="number"
+        android:id="@+id/edAddFoodFats"
+
+        android:layout_below="@+id/edAddFoodCarbs"
+        android:layout_width="match_parent"
+        ></EditText>
+
+    <Button
+        android:text="AddFood"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edAddFoodFats"
+        android:id="@+id/BtnAddFoodAdd"
+        android:layout_marginTop="15dp"
+        android:background="#e6edee"
+        android:layout_width="120dp"
+        android:layout_height="60dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

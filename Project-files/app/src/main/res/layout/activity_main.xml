@@ -1,0 +1,73 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#080127"
+
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:id="@+id/Title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/cream_cake"
+
+        android:textSize="70sp"
+        />
+    <RelativeLayout
+
+        android:layout_below="@id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <EditText
+            android:layout_marginTop="30dp"
+            android:hint="email"
+            android:layout_alignParentTop="true"
+            android:id="@+id/edEm"
+            android:background="#ffff"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:layout_height="55dp"></EditText>
+        <EditText
+            android:hint="password"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/edEm"
+            android:paddingLeft="10dp"
+            android:background="#ffff"
+            android:inputType="textPassword"
+
+            android:id="@+id/edPw"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"></EditText>
+        <Button
+            android:text="log in"
+            android:layout_below="@id/edPw"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/BtnLog"
+            android:background="#e6edee"
+            android:layout_width="120dp"
+            android:layout_height="60dp"></Button>
+        <Button
+            android:text="register"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/edPw"
+            android:background="#e6edee"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/BtnReg"
+            android:layout_width="120dp"
+            android:layout_height="60dp"></Button>
+    </RelativeLayout>
+</RelativeLayout>

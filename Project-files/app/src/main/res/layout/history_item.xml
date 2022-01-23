@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="20dp"
+    android:scrollbars="vertical"
+    app:cardCornerRadius="7dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+
+
+
+
+        <TextView
+            android:id="@+id/FoodNameInLayoutCardHistory"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/KcalInLayoutCardValHistory"
+            android:layout_height="wrap_content"
+            android:text="300"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_toEndOf="@+id/FoodNameInLayoutCardHistory"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/gramsInLayoutCardVal"/>
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/KcalLabelHistory"
+            android:layout_height="wrap_content"
+            android:text="kCal"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_toEndOf="@+id/KcalInLayoutCardValHistory"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="40dp"
+            android:layout_below="@+id/gramsInLayoutCardVal"/>
+
+        <TextView android:layout_marginLeft="240dp"
+            android:id="@+id/proteinLabelInCardHistory"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Protein: "
+            android:layout_above="@+id/carbsLabelInCardHistory"
+            ></TextView>
+        <TextView
+            android:layout_marginLeft="240dp"
+            android:id="@+id/carbsLabelInCardHistory"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Carbs: "
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_centerVertical="true"
+            ></TextView>
+
+        <TextView
+            android:layout_marginLeft="240dp"
+            android:id="@+id/fatsLabelInCardHistory"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Fats: "
+            android:layout_below="@+id/carbsLabelInCardHistory"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/proteinInCardHistory"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:layout_above="@+id/carbsInCardHistory"
+            android:textColor="#45b6fe"
+            android:layout_toEndOf="@+id/carbsLabelInCardHistory"
+            ></TextView>
+        <TextView
+            android:id="@+id/carbsInCardHistory"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="34"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="#b53737"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/carbsLabelInCardHistory"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/fatsInCardHistory"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="#FF7F50"
+            android:layout_below="@+id/carbsInCardHistory"
+            android:layout_toEndOf="@+id/carbsLabelInCardHistory"
+            ></TextView>
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="g"
+            android:layout_above="@+id/carbsInCardHistory"
+
+            android:layout_toEndOf="@+id/fatsInCardHistory"
+            ></TextView>
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="g"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/carbsInCardHistory"
+            ></TextView>
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="g"
+            android:layout_below="@+id/carbsInCardHistory"
+            android:layout_toEndOf="@+id/carbsInCardHistory"
+            ></TextView>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

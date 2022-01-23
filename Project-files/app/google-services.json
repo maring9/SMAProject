@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1030861999613",
+    "project_id": "calorizator9000",
+    "storage_bucket": "calorizator9000.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030861999613:android:a8457b76d17564e0581d94",
+        "android_client_info": {
+          "package_name": "com.example.smaproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030861999613-c9lk3n096jsmjsv4hpqipiul58rf5b85.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl503gJAnIUc8dJ3zXBVbR1dn-nQpfMio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030861999613-c9lk3n096jsmjsv4hpqipiul58rf5b85.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity"
+    android:background="#080127">
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:hint="Name"
+            android:background="#ffff"
+            android:layout_height="55dp"
+
+            android:layout_alignParentTop="true"
+            android:id="@+id/edNameSettings"
+            android:layout_width="match_parent"
+            ></EditText>
+        <EditText
+            android:paddingLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:hint="Age"
+            android:background="#ffff"
+            android:layout_height="55dp"
+            android:inputType="number"
+            android:layout_below="@+id/edNameSettings"
+            android:id="@+id/edAgeSettings"
+            android:layout_width="match_parent"
+            tools:ignore="UnknownId"></EditText>
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:hint="Weight"
+            android:background="#ffff"
+            android:layout_height="55dp"
+            android:inputType="number"
+            android:layout_below="@+id/edAgeSettings"
+            android:id="@+id/edWeightSettings"
+            android:layout_width="match_parent"
+            tools:ignore="UnknownId"></EditText>
+        <EditText
+            android:paddingLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:hint="Height"
+            android:background="#ffff"
+            android:layout_height="55dp"
+            android:inputType="number"
+
+            android:layout_below="@+id/edWeightSettings"
+            android:id="@+id/edHeightSettings"
+            android:layout_width="match_parent"
+            tools:ignore="UnknownId"></EditText>
+        <Spinner
+            android:paddingLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:background="#ffff"
+            android:layout_height="55dp"
+
+
+            android:layout_below="@+id/edHeightSettings"
+            android:id="@+id/edGoalSettings"
+            android:layout_width="match_parent"
+            android:spinnerMode="dropdown"
+            tools:ignore="UnknownId"></Spinner>
+        <Button
+            android:text="Update"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/edGoalSettings"
+            android:id="@+id/BtnUpdateSettings"
+            android:layout_marginTop="30dp"
+            android:background="#e6edee"
+            android:layout_width="120dp"
+            android:layout_height="60dp"></Button>
+    </RelativeLayout>
+</RelativeLayout>

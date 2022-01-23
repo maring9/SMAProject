@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+
+
+
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:textColor="#101010"
+        android:layout_height="55dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:id="@+id/EdFoodChoiceDialog"
+        android:layout_width="match_parent"
+        android:spinnerMode="dropdown">
+
+
+    </Spinner>
+    <EditText
+        android:id="@+id/EdGramsDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="10dp"
+        android:hint="Grams"
+        android:inputType="number"
+        android:layout_below="@+id/EdFoodChoiceDialog"
+        />
+
+
+    <Button
+        android:id="@+id/BtnAddFoodPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginBottom="7dp"
+        android:background="#e6edee"
+        android:text="Add"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/EdGramsDialog"
+        android:layout_alignParentRight="true"
+        ></Button>
+
+
+    <Button
+        android:id="@+id/BtnCancelPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginBottom="7dp"
+        android:background="#FF7C7C"
+        android:text="Cancel"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/EdGramsDialog"
+        android:layout_alignParentLeft="true"
+        ></Button>
+</RelativeLayout>

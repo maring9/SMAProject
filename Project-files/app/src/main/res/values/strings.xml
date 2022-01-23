@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Calorify</string>
+    <string name="title_activity_home">Calorify</string>
+    <string name="title_home">Home</string>
+    <string name="meal">Meals</string>
+    <string name="data">Settings</string>
+</resources>

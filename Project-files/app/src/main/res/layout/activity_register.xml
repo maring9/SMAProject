@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+
+    android:background="#080127">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RegisterLabel"
+        android:text="Register"
+        android:textColor="#ffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        />
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Email"
+        android:background="#ffff"
+        android:layout_height="55dp"
+
+        android:layout_below="@+id/RegisterLabel"
+        android:id="@+id/edEmReg"
+        android:layout_width="match_parent"
+        ></EditText>
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:hint="Password"
+        android:background="#ffff"
+        android:layout_height="55dp"
+        android:inputType="textPassword"
+
+        android:layout_below="@+id/edEmReg"
+        android:id="@+id/edPwReg"
+        android:layout_width="match_parent"
+        tools:ignore="UnknownId"></EditText>
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:hint="Name"
+        android:background="#ffff"
+        android:layout_height="55dp"
+
+        android:layout_below="@+id/edPwReg"
+        android:id="@+id/edNameReg"
+        android:layout_width="match_parent"
+        tools:ignore="UnknownId"></EditText>
+    <Spinner
+        android:paddingLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffff"
+        android:layout_height="55dp"
+
+        android:layout_below="@+id/edNameReg"
+        android:id="@+id/edGenderReg"
+        android:layout_width="match_parent"
+        android:spinnerMode="dropdown"
+        tools:ignore="UnknownId"></Spinner>
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:hint="Age"
+        android:background="#ffff"
+        android:layout_height="55dp"
+        android:inputType="number"
+        android:layout_below="@+id/edGenderReg"
+        android:id="@+id/edAgeReg"
+        android:layout_width="match_parent"
+        tools:ignore="UnknownId"></EditText>
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:hint="Weight"
+        android:background="#ffff"
+        android:layout_height="55dp"
+        android:inputType="number"
+        android:layout_below="@+id/edAgeReg"
+        android:id="@+id/edWeightReg"
+        android:layout_width="match_parent"
+        tools:ignore="UnknownId"></EditText>
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:hint="Height"
+        android:background="#ffff"
+        android:layout_height="55dp"
+        android:inputType="number"
+        android:layout_below="@+id/edWeightReg"
+        android:id="@+id/edHeightReg"
+        android:layout_width="match_parent"
+        tools:ignore="UnknownId"></EditText>
+
+    <Spinner
+        android:paddingLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffff"
+        android:layout_height="55dp"
+
+        android:layout_below="@+id/edHeightReg"
+        android:id="@+id/edGoalReg"
+        android:layout_width="match_parent"
+        android:spinnerMode="dropdown"
+        tools:ignore="UnknownId"></Spinner>
+
+    <Button
+        android:text="Register"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edGoalReg"
+        android:id="@+id/BtnRegReg"
+        android:layout_marginTop="15dp"
+        android:background="#e6edee"
+        android:layout_width="120dp"
+        android:layout_height="60dp"></Button>
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+</RelativeLayout>
